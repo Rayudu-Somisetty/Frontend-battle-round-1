@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Ad</title>
+  <link rel="stylesheet" href="ad.css" />
+</head>
+<body>
+  <div class="ad-container">
+    <!-- Background -->
+    <div class="background base" id="bgBase"></div>
+    <div class="background aberration" id="bgAberration"></div>
+
+    <!-- Skip Button -->
+    <button class="skip-button" onclick="window.location.href='home.html'">Skip</button>
+
+    <!-- Main Message -->
+    <div class="message">
+      <h1>
+        Create 
+        <span class="hover-target" id="reportHover">Reports</span> and 
+        <span class="hover-target" id="forecastHover">Forecasts</span>
+      </h1>
+      <h2>Now with insights of AI</h2>
+
+      <!-- Report Images -->
+      <div class="slide-image-group" id="reportImages">
+        <img src="report1.jpg" class="slide-img left" />
+        <img src="report2.jpg" class="slide-img right" />
+      </div>
+
+      <!-- Forecast Images -->
+      <div class="slide-image-group" id="forecastImages">
+        <img src="forecast1.jpg" class="slide-img left" />
+        <img src="forecast2.jpg" class="slide-img right" />
+      </div>
+    </div>
+  </div>
+
+  <script src="ad.js"></script>
+</body>
+</html>
